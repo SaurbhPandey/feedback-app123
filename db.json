@@ -1,0 +1,24 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "This is my feedback 1 text coming from the backend"
+    },
+    {
+      "id": 2,
+      "rating": 9,
+      "text": "This is my feedback 2 text coming from the backend"
+    },
+    {
+      "text": "laagi chootey na laagi chootey naaa",
+      "rating": 8,
+      "id": 4
+    },
+    {
+      "text": "ooo bhai mere se ban gya ye",
+      "rating": 9,
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+name: Create pull request
+on:
+  push:
+    branches:
+      - version_update1
+jobs:
+  prForMasterBranch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: master
+      - name: Reset master branch
+        run: |
+          git fetch origin version_update1:version_update1
+          git reset --hard version_update1
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: update master branch
+          title: Update master branch
+          branch: temp
+          delete-branch: true
+          # assignees: user-you-want-to
+          # reviewers: user-you-want-to

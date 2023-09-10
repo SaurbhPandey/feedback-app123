@@ -26,7 +26,7 @@ else
     echo "Created branch '$NEW_BRANCH_NAME'."
     git remote add source https://github.com/karanshukla430/feedback-app.git
     # PREVIOUS_COMMIT=$(git rev-parse HEAD@{1})
-    git pull source master
+    git pull --rebase source master
     # Get the commit hashes of the previous commit and current HEAD
     # PREVIOUS_COMMIT=$(git rev-parse HEAD@{1})
     # CURRENT_COMMIT=$(git rev-parse HEAD)

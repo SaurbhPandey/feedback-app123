@@ -19,7 +19,11 @@ NEW_BRANCH_NAME="$BRANCH_NAME"
 if git rev-parse --verify "$NEW_BRANCH_NAME" >/dev/null 2>&1; then
    git checkout $BRANCH_NAME
 <<<<<<< HEAD
+<<<<<<< HEAD
    git pull  origin master
+=======
+   git pull origin master
+>>>>>>> 29d588d42de5c1b3f60b7df0dca8200d402fb6dc
 =======
    git pull origin master
 >>>>>>> 29d588d42de5c1b3f60b7df0dca8200d402fb6dc

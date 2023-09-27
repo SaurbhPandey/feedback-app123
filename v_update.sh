@@ -24,8 +24,10 @@ else
     git pull origin master
     git checkout -b "$NEW_BRANCH_NAME"
     echo "Created branch '$NEW_BRANCH_NAME'."
+    git rebase master
     git remote add source https://github.com/karanshukla430/feedback-app.git
     # PREVIOUS_COMMIT=$(git rev-parse HEAD@{1})
+    git rebase master
     git pull source master
     # Get the commit hashes of the previous commit and current HEAD
     # PREVIOUS_COMMIT=$(git rev-parse HEAD@{1})

@@ -18,7 +18,11 @@ NEW_BRANCH_NAME="$BRANCH_NAME"
 # Check if the branch already exists
 if git rev-parse --verify "$NEW_BRANCH_NAME" >/dev/null 2>&1; then
    git checkout $BRANCH_NAME
+<<<<<<< HEAD
    git pull  origin master
+=======
+   git pull origin master
+>>>>>>> 29d588d42de5c1b3f60b7df0dca8200d402fb6dc
     git rebase master
     git remote add source https://github.com/karanshukla430/feedback-app.git
     # PREVIOUS_COMMIT=$(git rev-parse HEAD@{1})
